@@ -12,17 +12,28 @@
         android:id="@+id/etDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="false"
+        android:freezesText="false"
+
         android:hint="0"
         android:textAlignment="textEnd"
-        android:textSize="50dp"
-        />
+        android:textSize="50dp" />
    <GridLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:rowCount="4"
+       android:rowCount="5"
        android:columnCount="4"
        tools:context=".GridLayoutActivity">
 
+       <Button
+           android:id="@+id/btnClear"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:text="C"
+           android:textColor="#03A9F4"
+           android:textSize="30dp" />
        <Button
            android:id="@+id/btn1"
            android:layout_width="wrap_content"
@@ -164,6 +175,15 @@
            android:layout_rowWeight="1"
            android:layout_columnWeight="1"
            android:text="%"
+           android:textSize="30dp"
+           />
+       <Button
+           android:id="@+id/btnDivide"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_rowWeight="1"
+           android:layout_columnWeight="1"
+           android:text="/"
            android:textSize="30dp"
            />
        <Button
